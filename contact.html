@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Event Management</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-brand">Royal  Events</span>
+        </div>
+        <div class="navbar-right">
+            <span id="hamburger-icon">&#9776;</span> 
+              <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">login</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-wrapper" id="contact">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+
+            <section class="form-section">
+                <h2>For Service Providers</h2>
+                <!-- web3 api outer form code -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- this code end -->
+                <form action="submit_service_provider.php" method="post" class="contact-form">
+                    <!-- second api code -->
+                    <input type="hidden" name="access_key" value="36c8ad86-b11c-4c2f-a5f7-b69e144fdb6c">
+                    <!-- code end -->
+                    <div class="form-group">
+                        <label for="sp_name">Full Name</label>
+                        <input type="text" id="sp_name" name="sp_name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sp_email">Email Address</label>
+                        <input type="email" id="sp_email" name="sp_email" placeholder="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sp_phone">Phone Number</label>
+                        <input type="tel" id="sp_phone" name="sp_phone" placeholder="123-456-7890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sp_company">Company/Service</label>
+                        <input type="text" id="sp_company" name="sp_company" placeholder="Event Services Co." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sp_message">Message</label>
+                        <textarea id="sp_message" name="sp_message" rows="6" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </form>
+            </section>
+
+            <section class="form-section">
+                <h2>For Clients</h2>
+                <!-- web3 api outer form code -->
+             <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- this code end -->
+                <form action="submit_client.php" method="post" class="contact-form">
+                     <!-- second api code -->
+                     <input type="hidden" name="access_key" value="36c8ad86-b11c-4c2f-a5f7-b69e144fdb6c">
+                     <!-- code end -->
+                    <div class="form-group">
+                        <label for="client_name">Full Name</label>
+                        <input type="text" id="client_name" name="client_name" placeholder="Jane Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_email">Email Address</label>
+                        <input type="email" id="client_email" name="client_email" placeholder="janesmith@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_phone">Phone Number</label>
+                        <input type="tel" id="client_phone" name="client_phone" placeholder="098-765-4321" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_event">Event Type</label>
+                        <input type="text" id="client_event" name="client_event" placeholder="Wedding, Birthday, etc." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_message">Message</label>
+                        <textarea id="client_message" name="client_message" rows="6" placeholder="Details about your event..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </form>
+             </form>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('hamburger-icon').addEventListener('click', function() {
+    var menu = document.querySelector('.navbar-menu');
+    
+    // Toggle the "show" class to show or hide the menu
+    menu.classList.toggle('show');
+});
+    </script>
+</body>
+</html>

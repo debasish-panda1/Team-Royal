@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Event Management System</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-brand">Royal Events</span>
+        </div>
+        <div class="navbar-right">
+            <span id="hamburger-icon">&#9776;</span>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav> 
+    
+    <main>
+        <section class="services-container">
+            <div class="services-heading">
+                <h1>Our Services</h1>
+            </div>
+            <section class="services-section">
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wedding Planning">
+                    <div class="service-description">
+                        <h2>Catering</h2>
+                        <ul>
+                            <li>Custom menu options</li>
+                            <li>On-site preparation</li>
+                            <li>Waitstaff services</li>
+                        </ul>
+                        <button class="add-btn">Add 1000$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/1870438/pexels-photo-1870438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Corporate Events">
+                    <div class="service-description">
+                        <h2>videography</h2>
+                        <ul>
+                            <li>Full event coverage</li>
+                            <li>Professional editing</li>
+                            <li>Highlight reels</li>
+                        </ul>
+                        <button class="add-btn">Add 1500$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://media.istockphoto.com/id/1171816219/photo/wedding-ceremony-at-beautiful-farm.jpg?b=1&s=612x612&w=0&k=20&c=A5yJ_YwVNQdneAs2iptfm1ukG5MOy8QDFzaQMclTp1o=" alt="Birthday Parties">
+                    <div class="service-description">
+                        <h2>Flower Decoration</h2>
+                        <ul>
+                            <li>Custom floral designs</li>
+                            <li>Themed arrangements</li>
+                            <li>Venue decoration</li>
+                        </ul>
+                        <button class="add-btn">Add 500$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Conference Management">
+                    <div class="service-description">
+                        <h2>DJ Night</h2>
+                        <ul>
+                            <li>Music playlists</li>
+                            <li>Sound system setup</li>
+                            <li>Lighting effects</li>
+                        </ul>
+                        <button class="add-btn">Add 1200$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/248519/pexels-photo-248519.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Catering">
+                    <div class="service-description">
+                        <h2>Photography</h2>
+                        <ul>
+                            <li>Event photoshoots</li>
+                            <li>Candid moments</li>
+                            <li>Digital albums</li>
+                        </ul>
+                        <button class="add-btn">Add 800$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/4684379/pexels-photo-4684379.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Catering">
+                    <div class="service-description">
+                        <h2>Ballons</h2>
+                        <ul>
+                            <li>Balloon arches</li>
+                            <li>Custom decorations</li>
+                            <li>Themed setups</li>
+                        </ul>
+                        <button class="add-btn">Add 800$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/4620873/pexels-photo-4620873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Catering">
+                    <div class="service-description">
+                        <h2>Beauty & Makeup</h2>
+                        <ul>
+                            <li>Professional makeup artists</li>
+                            <li>Hairstyling services</li>
+                            <li>Event-ready looks</li>
+                        </ul>
+                        <button class="add-btn">Add 800$</button>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Catering">
+                    <div class="service-description">
+                        <h2>Cakes</h2>
+                        <ul>
+                            <li>Custom designs</li>
+                            <li>Flavor variety</li>
+                            <li>Delivery services</li>
+                        </ul>
+                        <button class="add-btn">Add 800$</button>
+                    </div>
+                </div>
+            </section>
+            <aside class="summary">
+                <h2>Selected Services</h2>
+                <div id="selected-services">
+                    <!-- Added services will appear here -->
+                </div>
+                <div class="total-amount">
+                    <h3>Total Amount: $0.00</h3>
+                </div>
+                <a href="payment.html">
+                    <button id="proceed-btn">Proceed to Pay</button>
+                </a>
+            </aside>
+        </section>
+    </main>
+
+    <script src="service.js"></script>
+</body>
+</html>

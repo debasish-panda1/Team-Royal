@@ -1,0 +1,117 @@
+.result-display {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Style for each result item */
+.result-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for result items */
+.result-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for result item heading */
+.result-item h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #050505;
+}
+
+/* Style for result item description */
+.result-item p {
+    margin: 5px 0;
+    color: #0e0e0f;
+    font-weight: 600;
+}
+
+/* Style for result item price */
+.result-item h3 {
+    margin: 0;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+.btn {
+    padding: 10px 15px;
+    background-color: #1da126;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #19741f;
+}
+/* Flex container for search form and results */
+.search_section{
+    padding: 20px;
+    display: flex;
+}
+
+/* Style for the search box container */
+.search-box {
+    flex: 1; 
+    max-width: 4000px; 
+}
+
+/* Style for the search results container */
+.result-display {
+    display: none;
+    width: 300px; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#doubtresult{
+    color: coral;
+    font-size: 2rem;
+    padding-top:15%;
+    font-weight: 600;
+}
+
+#search-output{
+    background-color:#fff;
+}
+@media(max-width:1800px) {
+    #result-container{
+        position:absolute;
+        top: 74%;
+        left: 40%;
+        background-color: #fce4ec;
+        height: 20%;
+}
+}

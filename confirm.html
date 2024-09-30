@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <header>
+        <h1>Confirmation Page</h1>
+    </header>
+
+    <main>
+        <section class="confirmation-details">
+            <h2>Selected Services</h2>
+            <div id="display-selected-services"></div>
+            <div class="total-amount">
+                <h3>Total Amount: $<span id="display-total-amount">0.00</span></h3>
+            </div>
+
+            <h2>Payment Details</h2>
+            <div id="display-payment-details"></div>
+        </section>
+
+        <section class="final-buttons">
+            <button id="print-confirmation">Print Confirmation</button>
+        </section>
+        <a href="index.html">
+        <button>Go back</button>
+        </a>
+    </main>
+
+    <script src="confirm.js"></script>
+</body>
+</html>

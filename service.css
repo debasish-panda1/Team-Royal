@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
+:root {
+    --clr1: rgb(208, 67, 154);
+    --clr2: rgb(236, 68, 90);
+    --clr3: #fff;
+    --clr4: #000;
+    --clr5: lightgray;
+    --clr6: yellow;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#FFCEDE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: rgb(208, 67, 154); 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.navbar-left {
+    flex: 3;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.navbar-right {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 0.5rem;
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color:#f8f6f72a; 
+}
+/* Hide the menu initially for mobile */
+.navbar-right {
+    position: relative;
+}
+
+
+#hamburger-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+/* Styles for Services section */
+.services-section {
+    flex-direction: column;
+    align-items: flex-start; 
+    height: calc(100vh - 70px);
+    margin-top: 0px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto; 
+    width: 75%;
+}
+.services-heading h1 {
+    font-size: 2.5rem;
+    padding-left: 30%;
+    padding-top: 0px;
+    color: rgb(221, 53, 157);
+}
+/* Selected Services (Summary) */
+.summary {
+    position: fixed;
+    top: 70px;
+    right: 20px; 
+    width: 250px; 
+    max-height: calc(100vh - 80px); 
+    padding: 20px;
+    background-color: #fce4ec; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto; 
+    z-index: 900; 
+    box-sizing: border-box;
+}
+
+.summary h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: rgb(208, 67, 154); 
+}
+
+.total-amount {
+    margin-top: 20px;
+}
+
+.total-amount h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#proceed-btn {
+    background-color: rgb(203, 62, 149); 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#proceed-btn:hover {
+    background-color: rgb(208, 67, 154); 
+}
+
+/* Styles for individual service */
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fce4ec;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position:relative;
+}
+
+.add-btn {
+    background-color: rgb(203, 62, 149); 
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom:15px;
+    right: 15px;
+}
+
+.add-btn:hover {
+    background-color: rgb(208, 67, 154); 
+}
+
+.service img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-description {
+    flex: 1;
+}
+
+.service-description h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: rgb(208, 67, 154);
+}
+
+.service-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #090707;
+    margin-bottom: 15px;
+}
+
+.service-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.service-description ul li {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.856);
+    margin-bottom: 5px;
+}
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* Styles for Selected Services */
+#selected-services {
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+    max-height: 300px; 
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    margin-bottom: 8px; 
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+.service-item:hover {
+    background-color: #f0f0f0; 
+}
+
+.service-item span {
+    font-size: 0.9em;
+    color: #333; 
+}
+
+.remove-btn {
+    background-color: rgb(203, 62, 149); 
+    color: #ffffff;
+    border: none;
+    padding: 5px 8px; 
+    font-size: 0.9em; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: rgb(208, 67, 154);
+}
+
+.total-amount {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1em; 
+    font-weight: bold; 
+    text-align: center; 
+}
+@media (max-width: 1200px) {
+    .services-section {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center; 
+        width: 80%;
+    }
+    
+    .summary {
+        width: 100%; 
+        margin-top: 20px; 
+        position: relative; 
+        margin-left: 20px;
+    }
+}
+@media (max-width: 900px) 
+{
+    .service img {
+        width: 50%;
+        height: fit-content; 
+    }
+
+    .service-description h2 {
+        font-size: 1.5em; 
+    }
+
+    .add-btn {
+        width: 50%;
+        margin-top:140%; 
+    }
+
+    .summary {
+        padding: 15px;
+    }
+
+    .summary h2 {
+        font-size: 1.5em;
+    }
+
+    .total-amount h3 {
+        font-size: 1.2em; 
+    }
+
+    #proceed-btn {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;  
+        width: 100%;
+        background-color: var(--clr2); 
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 1000;
+        padding: 20px;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-menu li a {
+        font-size: 15px; 
+    }
+
+    #hamburger-icon {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+.login-container h1 {
+    font-size: 1.8rem;
+}
+
+.login-form input,
+button {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    font-size: 1.2rem;
+}
+}

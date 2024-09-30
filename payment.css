@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #c62a7e; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#name{
+padding-bottom: 20px;
+color: #0b0b0b;
+font-weight: 600
+}
+
+.logo h1 {
+    font-size: 2em;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+button {
+    background-color: #c62a7e;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #b42d6b; 
+}
+
+.go-back {
+    background-color: #3f4347; 
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.go-back:hover {
+    background-color: #1f262a;
+}
+
+#lastcopy{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #c62a7e;
+    color: white;
+    margin-top: 143px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-row .form-group {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #lastcopy{
+        text-align: center;
+        padding: 20px 0;
+        background-color: #c62a7e;
+        color: white;
+        margin-top: 95px;
+    }
+    
+}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap');
+:root {
+    --clr1: rgb(208, 67, 154);
+    --clr2: rgb(236, 68, 90);
+    --clr3: #fff;
+    --clr4: #000;
+    --clr5: lightgray;
+    --clr6: yellow;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: rgb(208, 67, 154); 
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.navbar-left {
+    flex: 3;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.navbar-right {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 0.5rem;
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color:#f8f6f72a; 
+}
+/* Hide the menu initially for mobile */
+.navbar-right {
+    position: relative;
+}
+#hamburger-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+.contact-wrapper {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 2rem;
+    box-sizing: border-box;
+    margin: 2rem auto 0;
+}
+.contact-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(208, 67, 154);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.contact-container h1 {
+    margin-bottom: 1.5rem;
+    color: rgb(208, 67, 154);
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 2rem;
+}
+
+.form-section h2 {
+    color: #333;
+    border-bottom: 2px solid rgb(208, 67, 154);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: rgb(208, 67, 154); 
+    outline: none;
+}
+
+.submit-btn {
+    background-color: rgb(208, 67, 154);
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #c2185b;
+}
+
+@media (max-width: 991px) {
+        .navbar-menu {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            right: 0;  
+            width: 100%;
+            background-color: var(--clr2); 
+            justify-content: flex-start;
+            align-items: flex-start;
+            z-index: 1000;
+            padding: 20px;
+        }
+        .navbar-menu.show {
+            display: flex;
+        }
+        .navbar-menu li {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .navbar-menu li a {
+            font-size: 15px;
+        }
+        #hamburger-icon {
+            display: inline-block;
+            font-size: 1.5rem;
+        }
+}
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.875rem;
+    }
+
+    .submit-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.75rem;
+    }
+
+    .submit-btn {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+    }
+}
